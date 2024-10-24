@@ -14,4 +14,8 @@ export default ({ env }) => ({
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
+  configSync: {
+    syncDir: 'config/sync',
+    autoSync: env.bool('CONFIG_SYNC_AUTO', false),
+  },
 });
