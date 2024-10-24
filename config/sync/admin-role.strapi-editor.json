@@ -1,0 +1,307 @@
+{
+  "documentId": "fytyw94jymfyz1m2vlkl1z46",
+  "name": "Editor",
+  "code": "strapi-editor",
+  "description": "Editors can manage and publish contents including those of other users.",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "onj29i4yku6u5wt8u4zc43fx",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "integrations",
+          "slug"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "lv2x4ysfvxr7zvuqtczuadjl",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "hacvh0g86hi8323sn3sb9s7i",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "x6e6po5p02n3bd8u2tdho596",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "integrations",
+          "slug"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "wr9eufu0hbqb9zhzrn1ba24z",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "integrations",
+          "slug"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "l1843dderqvs3h1sdrafnly1",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::integration.integration",
+      "properties": {
+        "fields": [
+          "Title",
+          "Content",
+          "slug",
+          "Icon",
+          "HeroImage",
+          "MetaTitle",
+          "MetaDescription",
+          "Excerpt",
+          "categories",
+          "products",
+          "type_of_integration",
+          "HeroImageAltText"
+        ],
+        "locales": [
+          "en",
+          "es",
+          "pt"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "amj9e2chtkdtaa6mqldt1vth",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::integration.integration",
+      "properties": {
+        "locales": [
+          "en",
+          "es",
+          "pt"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "gyukpgk577ue3edkfa9fccpf",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::integration.integration",
+      "properties": {
+        "locales": [
+          "en",
+          "es",
+          "pt"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ldexv920406ub6cmbzcul3pq",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::integration.integration",
+      "properties": {
+        "fields": [
+          "Title",
+          "Content",
+          "slug",
+          "Icon",
+          "HeroImage",
+          "MetaTitle",
+          "MetaDescription",
+          "Excerpt",
+          "categories",
+          "products",
+          "type_of_integration",
+          "HeroImageAltText",
+          "Featured"
+        ],
+        "locales": [
+          "en",
+          "es",
+          "pt"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "qa6z8xaqag12p0bxa5qpdsko",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::integration.integration",
+      "properties": {
+        "fields": [
+          "Title",
+          "Content",
+          "slug",
+          "Icon",
+          "HeroImage",
+          "MetaTitle",
+          "MetaDescription",
+          "Excerpt",
+          "categories",
+          "products",
+          "type_of_integration",
+          "HeroImageAltText",
+          "Featured"
+        ],
+        "locales": [
+          "en",
+          "es",
+          "pt"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "neji0qtoiwrhv114r052ljxa",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "name",
+          "integrations"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "g6trclhei33flpn1qtpf84wt",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "name",
+          "integrations"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator",
+        "admin::has-same-role-as-creator"
+      ],
+      "locale": null
+    },
+    {
+      "documentId": "wlsbxfuegbmt5lctu0zkj9li",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::type-of-integration.type-of-integration",
+      "properties": {
+        "fields": [
+          "name",
+          "integrations"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "irr3o2au3mm5jdoa30n8jmx2",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::type-of-integration.type-of-integration",
+      "properties": {
+        "fields": [
+          "name",
+          "integrations"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator",
+        "admin::has-same-role-as-creator"
+      ],
+      "locale": null
+    },
+    {
+      "documentId": "t93y24wt5tqtto1dqpy6bk7r",
+      "action": "plugin::upload.assets.copy-link",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "plvvm8o2pmljrdc7x8yzjza8",
+      "action": "plugin::upload.assets.create",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "n02x50itfoqdvwtd3dweowaq",
+      "action": "plugin::upload.assets.download",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "clz26mb67adlh21iw5jzt6fi",
+      "action": "plugin::upload.assets.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "i5iqmrtrer9ghv9i5zwhoiul",
+      "action": "plugin::upload.configure-view",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "msk92e8kyuhosdc1avse9eoq",
+      "action": "plugin::upload.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    }
+  ]
+}
