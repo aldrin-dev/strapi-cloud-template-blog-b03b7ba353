@@ -1,5 +1,5 @@
 {
-  "name": "my-app-name",
+  "name": "invgate-strapi",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -7,25 +7,40 @@
     "build": "strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
-    "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.0.0",
-    "@strapi/plugin-users-permissions": "5.0.0",
-    "@strapi/strapi": "5.0.0",
-    "better-sqlite3": "9.4.3",
-    "fs-extra": "^10.0.0",
-    "mime-types": "^2.1.27",
+    "@_sh/strapi-plugin-ckeditor": "^4.0.6",
+    "@aws-sdk/client-s3": "^3.670.0",
+    "@aws-sdk/lib-storage": "^3.670.0",
+    "@aws-sdk/s3-request-presigner": "^3.670.0",
+    "@strapi/email": "^5.0.3",
+    "@strapi/plugin-cloud": "5.1.0",
+    "@strapi/plugin-users-permissions": "5.1.0",
+    "@strapi/strapi": "5.1.0",
+    "aws-sdk": "^2.1691.0",
+    "fs-extra": "^11.2.0",
+    "mime": "^4.0.4",
+    "mime-types": "^2.1.35",
+    "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-provider-upload-cdn": "file:providers/strapi-provider-upload-cdn",
     "styled-components": "^6.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "1ec94477-3317-4c49-af8f-fa8ab6fcfba9"
   }
 }

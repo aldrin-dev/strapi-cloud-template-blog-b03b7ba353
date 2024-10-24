@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "type_of_integrations",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
+    "singularName": "type-of-integration",
+    "pluralName": "type-of-integrations",
+    "displayName": "Type of integration",
     "description": ""
   },
   "options": {
@@ -20,15 +20,9 @@
     },
     "integrations": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::integration.integration",
-      "mappedBy": "categories"
-    },
-    "slug": {
-      "pluginOptions": {},
-      "type": "uid",
-      "targetField": "name",
-      "required": true
+      "mappedBy": "type_of_integration"
     }
   }
 }
