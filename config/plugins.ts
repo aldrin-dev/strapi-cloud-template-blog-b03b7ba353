@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   upload: {
     config: {
-      provider: "strapi-provider-upload-cdn",
+      provider: "aws-s3",
       providerOptions: {
         rootPath: "prd/strapi/",
         baseUrl: "https://strapi-production-statics.invgate.com",
